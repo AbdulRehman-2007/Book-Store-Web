@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindh Board Books</title>
+ <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+   <!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar (glassmorphism) -->
+  <nav class="glass-navbar">
+    <div class="nav-container">
+      <div class="logo">AR BOOK POINT</div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cambridge.html">Cambridge Books</a></li>
+        <li><a href="sindh.html">Sindh Board Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="btn small">Sign In</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Banner -->
+  <section class="hero-banner d-flex align-items-center justify-content-center text-center">
+    <div class="text-white">
+      <h1 class="display-4 fw-bold">Sindh Board Books</h1>
+      <p class="lead">Explore Sindh Board textbooks, guides, and past papers.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search by subject...">
+        </div>
+        <div class="col-md-4">
+          <select id="priceFilter" class="form-select">
+            <option value="">All Price Ranges</option>
+            <option value="low">Low</option>
+            <option value="mid">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <button id="resetBtn" class="btn modern-btn w-100">Reset Filters</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Cards -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4" id="propertyList">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 property-card" data-location="mathematics" data-price="low">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh maths.jpg" alt="Mathematics IX" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Mathematics IX</h5>
+              <p class="card-text">Sindh Board Mathematics textbook for Class IX.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 property-card" data-location="physics" data-price="mid">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh phy.jpg" alt="Physics X" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Physics X</h5>
+              <p class="card-text">Sindh Board Physics textbook for Class X.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 property-card" data-location="chemistry" data-price="mid">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh chem.jpg" alt="Chemistry XI" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Chemistry XI</h5>
+              <p class="card-text">Sindh Board Chemistry textbook for Class XI.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 property-card" data-location="biology" data-price="mid">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh bio.jpg" alt="Biology XII" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Biology XII</h5>
+              <p class="card-text">Sindh Board Biology textbook for Class XII.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 property-card" data-location="english" data-price="low">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh eng.jpg" alt="English IX" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">English IX</h5>
+              <p class="card-text">Sindh Board English textbook for Class IX.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 property-card" data-location="urdu" data-price="low">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh urdu.jpg" alt="Urdu IX" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Urdu IX</h5>
+              <p class="card-text">Sindh Board Urdu textbook for Class IX.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-4 property-card" data-location="islamiat" data-price="low">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh isl.jpg" alt="Islamiat X" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Islamiat X</h5>
+              <p class="card-text">Sindh Board Islamiat textbook for Class X.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-4 property-card" data-location="pakistan studies" data-price="low">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh pst.jpg" alt="Pakistan Studies" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Pakistan Studies</h5>
+              <p class="card-text">Sindh Board Pakistan Studies textbook.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-4 property-card" data-location="computer science" data-price="mid">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="assets/sindh isl.jpg" alt="Computer Science XI" class="book-cover" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Computer Science XI</h5>
+              <p class="card-text">Sindh Board Computer Science textbook for Class XI.</p>
+              <button class="btn modern-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Glassy Modern Footer -->
+<footer class="footer-glass mt-5">
+  <div class="container py-5">
+    <div class="row gy-4">
+      
+      <!-- About -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">BookStore</h5>
+        <p class="small text-muted">
+          Your trusted source for Cambridge & Sindh Board books, guides, and past papers.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li class="text-dark"><a href="index.html">Home</a></li>
+          <li class="text-muted"><a href="about.html">About</a></li>
+          <li class="text-muted"><a href="cambridge.html">Cambridge Books</a></li>
+          <li class="text-muted"><a href="sindh.html">Sindh Board Books</a></li>
+          <li class="text-muted"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">Contact Us</h5>
+        <p class="small mb-1 text-muted"><i class="bi bi-geo-alt-fill me-2"></i> Karachi, Pakistan</p>
+        <p class="small mb-1 text-muted"><i class="bi bi-telephone-fill me-2"></i> +92 300 1234567</p>
+        <p class="small text-muted"><i class="bi bi-envelope-fill me-2"></i> support@bookstore.com</p>
+      </div>
+
+      <div class="social-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+      <!-- Social + Payments -->
+      <!-- <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">Follow & Pay</h5>
+        <div class="social-icons mb-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="payment-icons">
+          <img src="assets/visa.png" alt="Visa">
+          <img src="assets/mastercard.png" alt="Mastercard">
+          <img src="assets/paypal.png" alt="PayPal">
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom text-center py-3">
+    <p class="mb-0 small text-dark">© <span id="year"></span> Ar Book Point All Rights Reserved.</p>
+  </div>
+
+  <p class="credit">Created by <span>AbdulRehman</span></p>
+
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

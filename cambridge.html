@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cambridge Books — BookNest</title>
+   <!-- Google Font -->
+  
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+ <nav class="glass-navbar">
+    <div class="nav-container">
+      <div class="logo">AR BOOK POINT</div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cambridge.html">Cambridge Books</a></li>
+        <li><a href="sindh.html">Sindh Board Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="btn small">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="page-hero cambridge-hero">
+    <div class="overlay"></div>
+    <div class="page-hero-content">
+      <h1>Cambridge Books Collection</h1>
+      <p>Textbooks, guides & past papers for O & A Levels</p>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar">
+    <div class="container filter-inner">
+      <input type="text" id="searchLocation" placeholder="Search book title..." />
+      <select id="priceFilter">
+        <option value="">All Prices</option>
+        <option value="low">Low (PKR 500-1000)</option>
+        <option value="mid">Mid (PKR 1000-2000)</option>
+        <option value="high">High (PKR 2000+)</option>
+      </select>
+      <button onclick="filterProperties()" class="btn filter-btn">Apply</button>
+      <button onclick="resetFilters()" class="btn filter-btn secondary">Reset</button>
+    </div>
+  </section>
+
+  <!-- Book Cards -->
+  <section class="books-section">
+    <div class="container">
+      <div class="book-grid">
+        <div class="book-card property-card" data-location="mathematics" data-price="mid">
+          <img src="assets/cam maths.jpg" alt="mathematics">
+          <h3>Mathematics (O Level)</h3>
+          <p>Core & Extended Syllabus</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+        <div class="book-card property-card" data-location="physics" data-price="high">
+          <img src="assets/cam phy.jpg" alt="physics">
+          <h3>Physics (A Level)</h3>
+          <p>Latest Edition with Practical Notes</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+        <div class="book-card property-card" data-location="chemistry" data-price="mid">
+
+            <img src="assets/cam  chem.jpg" alt="Chemistry">
+          <h3>Chemistry (O Level)</h3>
+          <p>Full syllabus coverage</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+        <div class="book-card property-card" data-location="biology" data-price="high">
+          <img src="assets/cam bio.jpg" alt="Biology">
+          <h3>Biology (A Level)</h3>
+          <p>Advanced theory & experiments</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+        <div class="book-card property-card" data-location="english" data-price="low">
+          <img src="assets/cam eng.jpg" alt="">
+          <h3>English Language (O Level)</h3>
+          <p>Grammar, essays & comprehension</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+
+        <div class="book-card property-card" data-location="chemistry ATP" data-price="low">
+          <img src="assets/cam  chem.jpg" alt="chemistry atp">
+          <h3>Chemistry ATP (O Level)</h3>
+          <p>Grammar, essays & comprehension</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+        <div class="book-card property-card" data-location="economics" data-price="mid">
+          <img src="assets/cam eco.jpg" alt="Economics">
+          <h3>Economics (AS Level)</h3>
+          <p>Key concepts & exam preparation</p>
+          <a href="#" class="btn view-btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Glassy Modern Footer -->
+<footer class="footer-glass mt-5">
+  <div class="container py-5">
+    <div class="row gy-4">
+      
+      <!-- About -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">BookStore</h5>
+        <p class="small text-muted">
+          Your trusted source for Cambridge & Sindh Board books, guides, and past papers.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li class="text-dark"><a href="index.html">Home</a></li>
+          <li class="text-muted"><a href="about.html">About</a></li>
+          <li class="text-muted"><a href="cambridge.html">Cambridge Books</a></li>
+          <li class="text-muted"><a href="sindh.html">Sindh Board Books</a></li>
+          <li class="text-muted"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">Contact Us</h5>
+        <p class="small mb-1 text-muted"><i class="bi bi-geo-alt-fill me-2"></i> Karachi, Pakistan</p>
+        <p class="small mb-1 text-muted"><i class="bi bi-telephone-fill me-2"></i> +92 300 1234567</p>
+        <p class="small text-muted"><i class="bi bi-envelope-fill me-2"></i> support@bookstore.com</p>
+      </div>
+
+      <div class="social-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+      <!-- Social + Payments -->
+      <!-- <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-muted">Follow & Pay</h5>
+        <div class="social-icons mb-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="payment-icons">
+          <img src="assets/visa.png" alt="Visa">
+          <img src="assets/mastercard.png" alt="Mastercard">
+          <img src="assets/paypal.png" alt="PayPal">
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom text-center py-3">
+    <p class="mb-0 small text-dark">© <span id="year"></span> BookStore. All Rights Reserved.</p>
+  </div>
+
+  <p class="credit">Created by <span>AbdulRehman</span></p>
+
+</footer>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
